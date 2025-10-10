@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>EstudianteController</servlet-name>
+        <servlet-class>Controller.EstudianteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DocenteController</servlet-name>
+        <servlet-class>Controller.DocenteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MateriaController</servlet-name>
+        <servlet-class>Controller.MateriaController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProgramaController</servlet-name>
+        <servlet-class>Controller.ProgramaController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EstudianteController</servlet-name>
+        <url-pattern>/EstudianteController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DocenteController</servlet-name>
+        <url-pattern>/DocenteController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MateriaController</servlet-name>
+        <url-pattern>/MateriaController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProgramaController</servlet-name>
+        <url-pattern>/ProgramaController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
